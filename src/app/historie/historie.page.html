@@ -10,4 +10,15 @@
       <ion-title size="large">Historie</ion-title>
     </ion-toolbar>
   </ion-header>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="auto"><h1>Seznam hledaných rýmů</h1></ion-col>
+      <ion-col><ion-button (click)="nacti()" >Znovu nacti</ion-button></ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-list>
+    <ion-item *ngFor="let klic of storedData">
+      {{ klic }}
+    </ion-item>
+  </ion-list>
 </ion-content>

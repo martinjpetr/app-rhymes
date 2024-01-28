@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-hlavni',
@@ -7,7 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HlavniPage implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
+
+  
+  goToRymyPage() {
+    this.router.navigate(['/tabs/rymy']);
+  }
+
+  goToHistoriePage() {
+    this.router.navigate(['/tabs/historie']);
+  }
+
+  goToInfoAplikacePage() {
+    this.router.navigate(['/tabs/infoaplikace']);
+  }
 
   ngOnInit() {
   }
