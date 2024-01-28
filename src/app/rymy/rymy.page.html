@@ -4,21 +4,27 @@
   </ion-toolbar>
 </ion-header>
 
-<!-- <ion-content [fullscreen]="true" class="ohraniceni">
+<ion-content [fullscreen]="true" class="ohraniceni">
   <ion-card>
     <ion-input
     type="text"
     fill="solid"
-    label="Slovo:"
+    label="Rým:"
     labelPlacement="floating"
-    helperText="Zadej slovo"
-    [(ngModel)]="slovo">
+    helperText="Zadej rým"
+    [(ngModel)]="rhyme">
   </ion-input>
   </ion-card>
 
   <ion-item>
-    <ion-button expand="block" (click)="searchWord()">Vyhledej</ion-button>
+    <ion-button expand="block" (click)="searchRhyme()">Vyhledej</ion-button>
   </ion-item> 
+
+  <ion-list *ngIf="similarRhymes.length > 0">
+    <h1>Seznam podobných rýmů</h1>
+    <ion-item *ngFor="let similarRhyme of similarRhymes">
+      {{ similarRhyme }}
+    </ion-item>
+  </ion-list> 
 </ion-content>
--->
 
