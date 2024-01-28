@@ -1,0 +1,25 @@
+.no-scroll-content {
+    --overflow: hidden;
+}
+
+.ohraniceni {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: #907aa7;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.ohraniceni p {
+    text-align: center;
+    font-size: larger;
+    max-width: 90%;
+    margin: 10px 0;
+    color: #E6E6FA;
+}
+
+.autor {
+    font-style: oblique;
+}

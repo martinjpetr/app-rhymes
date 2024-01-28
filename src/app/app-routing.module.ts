@@ -9,6 +9,18 @@ const routes: Routes = [
   {
     path: 'hlavni',
     loadChildren: () => import('./hlavni/hlavni.module').then( m => m.HlavniPageModule)
+  },
+  {
+    path: 'rymy',
+    loadChildren: () => import('./rymy/rymy.module').then( m => m.RymyPageModule)
+  },
+  {
+    path: 'historie',
+    loadChildren: () => import('./historie/historie.module').then( m => m.HistoriePageModule)
+  },
+  {
+    path: 'infoaplikace',
+    loadChildren: () => import('./infoaplikace/infoaplikace.module').then( m => m.InfoaplikacePageModule)
   }
 ];
 @NgModule({
