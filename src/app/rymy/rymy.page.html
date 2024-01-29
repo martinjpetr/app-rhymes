@@ -1,6 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>Objev nové rýmy..</ion-title>
+    <ion-title class="hlavicka">Najdi nové rýmy:</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -17,7 +17,7 @@
   </ion-card>
 
   <ion-item>
-    <ion-button expand="block" (click)="searchRhyme()">Vyhledej</ion-button>
+    <ion-button expand="block" (click)="searchRhyme()" color="success">Vyhledej</ion-button>
   </ion-item> 
 
   <ion-list *ngIf="similarRhymes.length > 0">

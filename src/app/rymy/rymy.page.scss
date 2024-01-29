@@ -1,0 +1,23 @@
+.hlavicka {
+    text-align: center;
+    font-size: x-large;
+    color: #4fa125;
+  }
+  ion-content.ohraniceni {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  ion-button {
+    width: 100%;
+    background-color: #b4eb98;
+  }
+  ion-card {
+    background-color: #b4eb98;
+    width: 95%;
+  }
+  h1{
+    text-align: center;
+  }

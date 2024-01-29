@@ -1,6 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>Historie</ion-title>
+    <ion-title class="hlavicka">Historie</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -12,8 +12,8 @@
   </ion-header>
   <ion-grid>
     <ion-row>
-      <ion-col size="auto"><h1>Seznam hledaných rýmů</h1></ion-col>
-      <ion-col><ion-button (click)="nacti()" >Znovu nacti</ion-button></ion-col>
+      <ion-col size="auto" class="nadpis"><h1>Seznam hledaných rýmů:</h1></ion-col>
+      <ion-col><ion-button (click)="nacti()" color="success">Znovu nacti</ion-button></ion-col>
     </ion-row>
   </ion-grid>
   <ion-list>
